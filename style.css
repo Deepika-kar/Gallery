@@ -1,0 +1,57 @@
+body{
+    padding: 10px;
+    background-color:pink;
+    text-align: center;
+}
+nav {
+    font-size: 3rem;
+    background-color:pink;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ nav ul li{
+    cursor: pointer;
+    padding: 0.5rem;
+    flex: auto;
+    text-align: center;
+}
+nav ul li:hover  {
+    background-color:rgb(19, 10, 10);
+    color: black;
+}
+@media all and (max-width: 700px){
+    nav ul{
+        flex-direction: column;   
+    }
+    nav ul li {
+        text-align: center;
+    }
+    
+}
+.text{
+    font-style: normal;
+    font-size: 100px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+}
+.items{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.items:hover .image img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.items .text{
+    font-style: italic;
+    font-size: 60px;
+}
